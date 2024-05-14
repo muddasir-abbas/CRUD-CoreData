@@ -14,6 +14,12 @@
 		80C831C72BF3A1E200094937 /* CRUD_CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 80C831C52BF3A1E200094937 /* CRUD_CoreData.xcdatamodeld */; };
 		80C831C92BF3A1E300094937 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80C831C82BF3A1E300094937 /* Assets.xcassets */; };
 		80C831CC2BF3A1E300094937 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80C831CA2BF3A1E300094937 /* LaunchScreen.storyboard */; };
+		80C831DB2BF3A29B00094937 /* ClassHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C831DA2BF3A29B00094937 /* ClassHelper.swift */; };
+		80C831E02BF3B54000094937 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C831DF2BF3B54000094937 /* ListViewController.swift */; };
+		80C831E32BF3B79200094937 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80C831E22BF3B79200094937 /* CoreData.framework */; };
+		80C831E52BF3B84100094937 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C831E42BF3B84100094937 /* TableViewCell.swift */; };
+		80C831E82BF3BB4500094937 /* Student+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C831E62BF3BB4500094937 /* Student+CoreDataClass.swift */; };
+		80C831E92BF3BB4500094937 /* Student+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C831E72BF3BB4500094937 /* Student+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,12 @@
 		80C831C82BF3A1E300094937 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80C831CB2BF3A1E300094937 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80C831CD2BF3A1E300094937 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80C831DA2BF3A29B00094937 /* ClassHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassHelper.swift; sourceTree = "<group>"; };
+		80C831DF2BF3B54000094937 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		80C831E22BF3B79200094937 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		80C831E42BF3B84100094937 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		80C831E62BF3BB4500094937 /* Student+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataClass.swift"; sourceTree = "<group>"; };
+		80C831E72BF3BB4500094937 /* Student+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80C831E32BF3B79200094937 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +57,7 @@
 			children = (
 				80C831BB2BF3A1E200094937 /* CRUD-CoreData */,
 				80C831BA2BF3A1E200094937 /* Products */,
+				80C831E12BF3B79200094937 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,7 +74,10 @@
 			children = (
 				80C831BC2BF3A1E200094937 /* AppDelegate.swift */,
 				80C831BE2BF3A1E200094937 /* SceneDelegate.swift */,
-				80C831C02BF3A1E200094937 /* ViewController.swift */,
+				80C831DC2BF3B4EC00094937 /* TableViewClasses */,
+				80C831D92BF3A27800094937 /* HelperFIles */,
+				80C831D82BF3A26100094937 /* ViewController */,
+				80C831D72BF3A25000094937 /* CoreDataFiles */,
 				80C831C22BF3A1E200094937 /* Main.storyboard */,
 				80C831C82BF3A1E300094937 /* Assets.xcassets */,
 				80C831CA2BF3A1E300094937 /* LaunchScreen.storyboard */,
@@ -68,6 +85,48 @@
 				80C831C52BF3A1E200094937 /* CRUD_CoreData.xcdatamodeld */,
 			);
 			path = "CRUD-CoreData";
+			sourceTree = "<group>";
+		};
+		80C831D72BF3A25000094937 /* CoreDataFiles */ = {
+			isa = PBXGroup;
+			children = (
+				80C831E62BF3BB4500094937 /* Student+CoreDataClass.swift */,
+				80C831E72BF3BB4500094937 /* Student+CoreDataProperties.swift */,
+			);
+			path = CoreDataFiles;
+			sourceTree = "<group>";
+		};
+		80C831D82BF3A26100094937 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				80C831C02BF3A1E200094937 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		80C831D92BF3A27800094937 /* HelperFIles */ = {
+			isa = PBXGroup;
+			children = (
+				80C831DA2BF3A29B00094937 /* ClassHelper.swift */,
+			);
+			path = HelperFIles;
+			sourceTree = "<group>";
+		};
+		80C831DC2BF3B4EC00094937 /* TableViewClasses */ = {
+			isa = PBXGroup;
+			children = (
+				80C831DF2BF3B54000094937 /* ListViewController.swift */,
+				80C831E42BF3B84100094937 /* TableViewCell.swift */,
+			);
+			path = TableViewClasses;
+			sourceTree = "<group>";
+		};
+		80C831E12BF3B79200094937 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80C831E22BF3B79200094937 /* CoreData.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,8 +201,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				80C831C12BF3A1E200094937 /* ViewController.swift in Sources */,
+				80C831E82BF3BB4500094937 /* Student+CoreDataClass.swift in Sources */,
 				80C831BD2BF3A1E200094937 /* AppDelegate.swift in Sources */,
+				80C831E52BF3B84100094937 /* TableViewCell.swift in Sources */,
 				80C831C72BF3A1E200094937 /* CRUD_CoreData.xcdatamodeld in Sources */,
+				80C831E02BF3B54000094937 /* ListViewController.swift in Sources */,
+				80C831E92BF3BB4500094937 /* Student+CoreDataProperties.swift in Sources */,
+				80C831DB2BF3A29B00094937 /* ClassHelper.swift in Sources */,
 				80C831BF2BF3A1E200094937 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
